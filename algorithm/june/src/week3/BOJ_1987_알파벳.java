@@ -14,7 +14,7 @@ public class BOJ_1987_알파벳 {
 	static void dfs(int level, int x, int y) {
 
 		MAX = Math.max(level, MAX);
-
+		
 		for (int d = 0; d < 4; d++) {
 			int dx = direct[d][0] + x;
 			int dy = direct[d][1] + y;
