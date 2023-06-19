@@ -11,7 +11,7 @@ public class SWEA_3289_서로소집합 {
 	static int findboss(int a) {
 		if (arr[a] == 0)
 			return a;
-		return findboss(arr[a]);
+		return arr[a] = findboss(arr[a]);
 	}
 
 	static void setUnion(int a, int b) {
