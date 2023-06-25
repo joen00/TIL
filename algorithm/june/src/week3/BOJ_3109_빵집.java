@@ -14,6 +14,7 @@ public class BOJ_3109_빵집 {
 		if (y == C - 1) {
 			map[x][y] = 'x';
 			flag = 1;
+			result++;
 			return;
 		}
 
@@ -46,12 +47,17 @@ public class BOJ_3109_빵집 {
 		for (int i = 0; i < R; i++) {
 			flag = 0;
 			dfs(i, 0);
+			print();
 		}
-		for (int i = 0; i < R; i++) {
-			if (map[i][C - 1] == 'x')
-				result++;
-		}
+
 		System.out.println(result);
+	}
+
+	static void print() {
+		for (int i = 0; i < R; i++) {
+			System.out.println(Arrays.toString(map[i]));
+		}
+		System.out.println("---------------------------");
 	}
 
 }
