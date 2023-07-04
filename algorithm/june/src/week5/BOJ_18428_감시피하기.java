@@ -48,8 +48,6 @@ public class BOJ_18428_감시피하기 {
 						flag = 1;
 						break;
 					}
-//					if (list.get(path[0]).x == 1 && list.get(path[1]).x ==1 && list.get(path[2]).x == 1 && list.get(path[0]).y == 0 && list.get(path[1]).y == 1 && list.get(path[2]).y == 2)
-//						System.out.println("선생님 : "+ teacher.get(i).x + ", " +  teacher.get(i).y + " =>  " + dx + ", " + dy + " => map : " + map[dx][dy]);
 					s++;
 				}
 				if (flag == 1)
@@ -58,12 +56,7 @@ public class BOJ_18428_감시피하기 {
 			if (flag == 1)
 				break;
 		}
-		// 학생 만나면 1 안만나면 0
-//		if (flag == 0) {
-//			for (int i = 0; i < 3; i++) {
-//				System.out.println(list.get(path[i]).x + " , " + list.get(path[i]).y);
-//			}
-//		}
+
 		return flag;
 	}
 
