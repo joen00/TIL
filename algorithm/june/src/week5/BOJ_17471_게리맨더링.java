@@ -61,14 +61,7 @@ public class BOJ_17471_게리맨더링 {
 					else
 						sum2 = sum2 + population[i];
 				}
-				
-//				if (Math.abs(sum1 - sum2) == 0) {
-//					for (int i = 1; i <= N; i++) {
-//						if (select[i])
-//							System.out.print(i + " , ");
-//					}
-//					System.out.println();
-//				}
+
 				MIN = Math.min(MIN, Math.abs(sum1 - sum2));
 			}
 
