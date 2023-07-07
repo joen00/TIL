@@ -75,7 +75,7 @@ public class BOJ_2636_치즈 {
 			for (int j = 0; j < M; j++) {
 				map[i][j] = Integer.parseInt(st.nextToken());
 			}
-		} // input end;
+		} 
 		time = 0;
 		while (true) {
 			if (size() == 0)
