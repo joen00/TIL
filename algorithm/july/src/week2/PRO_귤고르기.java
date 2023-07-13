@@ -24,7 +24,6 @@ public class PRO_귤고르기 {
 
 		int sum = 0;
 		for (int i = 0; i < valueList.size(); i++) {
-			// System.out.println(valueList.get(i));
 			if (sum == k)
 				break;
 			else if (sum + valueList.get(i) <= k) {
@@ -35,9 +34,7 @@ public class PRO_귤고르기 {
 				answer++;
 			}
 		}
-		//System.out.println(sum + " " + k);
-		
-		System.out.println(answer);
+	
 		return answer;
 	}
 
