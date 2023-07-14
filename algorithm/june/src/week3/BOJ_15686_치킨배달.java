@@ -41,7 +41,6 @@ public class BOJ_15686_치킨배달 {
 	static void dfs(int start, int level) {
 
 		if (level == M) {
-			// System.out.println(Arrays.toString(path));
 			chickendDis();
 			return;
 		}
