@@ -31,7 +31,7 @@ public class BOJ_15686_치킨배달 {
 						+ Math.abs(home.get(i).y - chicken.get(path[j]).y);
 				m = Math.min(dis, m);
 			}
-//			System.out.println(m);
+
 			sum = sum + m;
 		}
 		MIN = Math.min(sum, MIN);
