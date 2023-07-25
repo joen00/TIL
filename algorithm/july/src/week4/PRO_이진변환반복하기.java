@@ -6,8 +6,6 @@ import java.util.*;
 public class PRO_이진변환반복하기 {
 
 	static public int[] solution(String s) {
-
-
 		int countZero = 0;
 		String str = s;
 		int count = 0;
