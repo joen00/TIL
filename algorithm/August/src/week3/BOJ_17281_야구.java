@@ -10,6 +10,7 @@ public class BOJ_17281_야구 {
 	static boolean visit[];
 	static int N, MAX;
 	static int map[][];
+	static int s;
 
 	static int getScore() {
 
@@ -68,9 +69,14 @@ public class BOJ_17281_야구 {
 				path1[i] = path[j];
 				j++;
 			}
-			// System.out.println(Arrays.toString(path1));
+			
+		
 			MAX = Math.max(getScore(), MAX);
-			return;
+			
+			if (MAX == 46) {
+				System.out.println(Arrays.toString(path1));
+				s++;
+			}return;
 		}
 
 		for (int i = 0; i < 8; i++) {
@@ -104,7 +110,7 @@ public class BOJ_17281_야구 {
 		dfs(0);
 
 		System.out.println(MAX);
-
+		System.out.println(s);
 	}
 
 }
