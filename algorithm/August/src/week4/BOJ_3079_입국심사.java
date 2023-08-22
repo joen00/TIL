@@ -18,6 +18,7 @@ public class BOJ_3079_입국심사 {
 			arr[i] = Integer.parseInt(st.nextToken());
 			right = Math.max(arr[i], right);
 		}
+		Arrays.sort(arr);
 		right = right * M;
 		long left = 1;
 		long result = right;
@@ -25,13 +26,16 @@ public class BOJ_3079_입국심사 {
 			long mid = (left + right) / 2;
 			long sum = 0;
 			for (int i = 0; i < N; i++) {
-				sum = sum + (mid / arr[i]);
+				long cnt = (mid / arr[i]);
+				if (sum >= M)
+					break;
+				sum = sum + cnt;
 			}
 			if (sum < M)
 				left = mid + 1;
 			else if (sum >= M) {
 				right = mid - 1;
-				result = mid;
+				result = Math.min(mid,result);
 			}
 			
 		}
