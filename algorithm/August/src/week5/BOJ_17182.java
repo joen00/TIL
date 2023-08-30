@@ -30,14 +30,6 @@ public class BOJ_17182 {
 			}
 		}
 
-		int result = 0;
-		for (int i = 0; i < N; i++) {
-			result = Math.max(dist[M][i], result);
-		}
-		for (int i = 0; i < N; i++) {
-			System.out.println(Arrays.toString(dist[i]));
-		}
-		System.out.println(result);
 	}
 
 }
