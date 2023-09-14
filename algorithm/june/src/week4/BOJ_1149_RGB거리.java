@@ -3,6 +3,8 @@ package week4;
 import java.io.*;
 import java.util.*;
 
+
+
 public class BOJ_1149_RGB거리 {
 
 	public static void main(String[] args) throws IOException {
