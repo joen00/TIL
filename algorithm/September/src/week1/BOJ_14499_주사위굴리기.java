@@ -82,7 +82,7 @@ public class BOJ_14499_주사위굴리기 {
 			}
 			x = dx;
 			y = dy;
-			System.out.println(dice[3][1]);
+// 			System.out.println(dice[3][1]);
 		}
 
 		
