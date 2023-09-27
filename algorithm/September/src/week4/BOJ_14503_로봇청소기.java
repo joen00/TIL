@@ -88,9 +88,6 @@ public class BOJ_14503_로봇청소기 {
 				result++;
 				map[nowx][nowy] = 2;
 			}
-//			System.out.println("-----------------------");
-//			print();
-//			System.out.println(nowx + " " + nowy + " " + nowd);
 		}
 
 	
