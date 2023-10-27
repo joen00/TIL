@@ -45,9 +45,12 @@ public class 골프2 {
 			for (int j = 1; j < splits.length; j++) {
 				character[i].add(splits[j]);
 			}
-		} // input end;
+		} // input end; 
+		//name에는 제품의 이름 // character에는 제품의 특징 
+		
 		int index = 0;
-
+		
+		
 		for (int i = 0; i < name.length; i++) {
 			int flag = 0;
 			for (int j = 0; j < purchased.length; j++) {
@@ -69,13 +72,14 @@ public class 골프2 {
 				index++;
 			} // 구매한 상품에 없을 경우 구매 안한 목록으로 들어가기
 		}
+		// 어떤 특성이 몇개 나왔는지 넣기 
 
 		for (String s : map.keySet()) {
 			top.add(new node(s, map.get(s)));
 		}
-		Collections.sort(top);
-
-		int a = noPurchased[0];
+		Collections.sort(top); // 가장 높은 제품의 특성 위로 올리기 
+///////////////////////////////////////////////////////////////////////////////////////////
+		int a = noPurchased[0]; // 각 두개 씩 비교하면서 쓰기 
 
 		for (int i = 0; i < noPurchased.length - 1; i++) {
 			int b = noPurchased[i + 1];
@@ -90,6 +94,7 @@ public class 골프2 {
 						blist.add(j);
 				}
 			}
+			//////
 			int size = Math.min(alist.size(), blist.size());
 			int flag = 0;
 			for (int j = 0; j < size; j++) {
