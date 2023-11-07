@@ -138,9 +138,9 @@ public class BOJ_20207_달력 {
 			}
 		} // map에 넣기
 
-//		for (int i = 0; i < 4; i++) {
-//			System.out.println(Arrays.toString(map[i]));
-//		}
+		for (int i = 0; i < 4; i++) {
+			System.out.println(Arrays.toString(map[i]));
+		}
 
 		for (int i = 0; i < M + 1; i++) {
 			if (map[0][i] == 1 && !visit[0][i]) {
